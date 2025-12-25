@@ -1,37 +1,21 @@
 {
-  "name": "cobios-backend",
+  "name": "server",
   "version": "1.0.0",
-  "description": "Cobios Gym Management System - Backend API",
-  "main": "server.js",
+  "description": "\"backend work will be done here only hehe\"",
+  "repository": {
+    "type": "git",
+    "url": "\"cobios\""
+  },
+  "license": "ISC",
+  "author": "\"SARTHAK, SAURAV, YATEEN\"",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
-    "seed": "node src/scripts/seed.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "gym",
-    "management",
-    "mern",
-    "api"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "@openrouter/sdk": "^0.3.2",
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "express-rate-limit": "^7.1.5",
-    "express-validator": "^7.0.1",
-    "helmet": "^7.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.0.3",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1",
-    "nodemailer": "^6.9.7"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.2"
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemailer": "^7.0.12"
   }
 }
