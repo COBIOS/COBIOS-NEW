@@ -4,14 +4,14 @@ const aiController = require("../controllers/aiController");
 const auth = require("../middleware/auth");
 const roleGuard = require("../middleware/roleGuard");
 const validate = require("../middleware/validate");
-const { aiLimiter } = require("../middleware/rateLimiter");
+// const { aiLimiter } = require("../middleware/rateLimiter");
 const {
   generateWorkoutPlanValidator,
   generateDietPlanValidator,
 } = require("../validators/planValidator");
 
 router.use(auth);
-router.use(aiLimiter);
+// router.use(aiLimiter);
 
 router.post(
   "/generate-workout-plan",

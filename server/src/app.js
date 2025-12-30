@@ -3,7 +3,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 const cors = require("./config/cors");
 const errorHandler = require("./middleware/errorHandler");
-const { apiLimiter } = require("./middleware/rateLimiter");
+// const { apiLimiter } = require("./middleware/rateLimiter");
 
 // Import routes
 const authRoutes = require("./routes/authRoutes");
@@ -39,8 +39,8 @@ if (process.env.NODE_ENV === "development") {
   app.use(morgan("combined"));
 }
 
-// Rate limiting
-app.use("/api/", apiLimiter);
+// Rate limiting - commented out for now
+// app.use("/api/", apiLimiter);
 
 // Health check endpoint
 app.get("/api/health", (req, res) => {
